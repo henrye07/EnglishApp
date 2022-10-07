@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sena_app/description_class.dart';
+import 'package:sena_app/Courses/ui/widgets/description_class.dart';
 import 'description_class.dart';
 
 class CourseList extends StatelessWidget {

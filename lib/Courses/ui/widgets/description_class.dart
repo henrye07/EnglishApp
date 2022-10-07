@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:sena_app/floating_action_button.dart';
+import 'package:sena_app/Widgets/floating_action_button.dart';
 
 class DescriptionClass extends StatelessWidget {
   String title;

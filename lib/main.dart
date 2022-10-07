@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sena_app/Widgets/welcome_screen.dart';
 import 'package:sena_app/sena_courses.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SenaCourses()
-        // const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: WelcomeScreen()
         );
   }
 }
