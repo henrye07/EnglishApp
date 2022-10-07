@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sena_app/course_list.dart';
-import 'package:sena_app/description_class.dart';
-import 'package:sena_app/gradient_back.dart';
-import 'package:sena_app/name_bar.dart';
-import 'course_list.dart';
+import 'package:sena_app/sena_courses.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,29 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          // appBar: AppBar(
-          //   //Header
-          //   title: Text("Hola Mundo"),
-          // ),
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: [
-                  Container(
-                    height: 100,
-                  ),
-                  GradientBack("A1 Grammar lessons and exercises"),
-                  CourseList()
-                ],
-              ),
-              NameBar("Sena APP"),
-            ],
-          ),
-          // body: new CourseList(),
-          // body: new DescriptionClass(
-          //     "This, That, these, those", "assets/img/first_course.png"),
-        )
+        home: SenaCourses()
         // const MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
