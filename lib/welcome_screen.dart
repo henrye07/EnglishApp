@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sena_app/Widgets/button_general.dart';
 import 'package:sena_app/Widgets/gradient_back.dart';
-import 'package:sena_app/sena_courses.dart';
+import 'package:sena_app/Courses/ui/screens/sena_courses.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
