@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sena_app/Widgets/welcome_screen.dart';
-import 'package:sena_app/sena_courses.dart';
+import 'package:sena_app/welcome_screen.dart';
+import 'package:sena_app/Courses/ui/screens/sena_courses.dart';
 
 void main() {
   runApp(const MyApp());

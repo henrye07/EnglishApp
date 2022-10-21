@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sena_app/favorite_courses.dart';
-import 'package:sena_app/Courses/ui/screens/home_courses.dart';
+import 'package:sena_app/Courses/ui/widgets/home_courses.dart';
 import 'package:sena_app/person_course.dart';
 import 'package:sena_app/search_courses.dart';
 
