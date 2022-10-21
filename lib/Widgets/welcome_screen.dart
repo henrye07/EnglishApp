@@ -29,7 +29,7 @@ class WelcomeScreen extends StatelessWidget {
               ButtonGeneral(
                 text: "Let's go!",
                 onPressed: () {
-                  // return SenaCourses();
+                  _welcomeScreen(context);
                 },
                 width: 300,
                 height: 50,
@@ -39,5 +39,12 @@ class WelcomeScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _welcomeScreen(BuildContext context) {
+    final route = MaterialPageRoute(builder: (BuildContext context) {
+      return SenaCourses();
+    });
+    Navigator.of(context).push(route);
   }
 }
