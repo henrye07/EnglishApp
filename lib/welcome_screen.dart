@@ -17,8 +17,8 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.only(left: 15, right: 15),
-                child: Text(
+                margin: const EdgeInsets.only(left: 15, right: 15),
+                child: const Text(
                   "Welcome \n This is your English App",
                   style: TextStyle(
                       fontSize: 34.0,
@@ -29,7 +29,8 @@ class WelcomeScreen extends StatelessWidget {
               ButtonGeneral(
                 text: "Let's go!",
                 onPressed: () {
-                  _welcomeScreen(context);
+                  // _welcomeScreen(context);
+                  Navigator.of(context).pushNamed("/courses");
                 },
                 width: 300,
                 height: 50,
@@ -41,10 +42,10 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 
-  void _welcomeScreen(BuildContext context) {
-    final route = MaterialPageRoute(builder: (BuildContext context) {
-      return SenaCourses();
-    });
-    Navigator.of(context).push(route);
-  }
+  // void _welcomeScreen(BuildContext context) {
+  //   final route = MaterialPageRoute(builder: (BuildContext context) {
+  //     return SenaCourses();
+  //   });
+  //   Navigator.of(context).push(route);
+  // }
 }

@@ -6,8 +6,9 @@ import 'package:sena_app/Widgets/floating_action_button.dart';
 class DescriptionClass extends StatelessWidget {
   String title;
   String pathImage;
+  String route;
 
-  DescriptionClass(this.title, this.pathImage);
+  DescriptionClass(this.title, this.pathImage, this.route);
 
   @override
   Widget build(BuildContext context) {
@@ -57,15 +58,19 @@ class DescriptionClass extends StatelessWidget {
       alignment: Alignment(-0.9, 0.0),
     );
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Stack(
-          children: [image_class, FloatingActionButtonGreen()],
-          alignment: Alignment(0.9, 1),
-        ),
-        title_class,
-      ],
-    );
+    return InkWell(
+        onTap: () {
+          Navigator.of(context).pushNamed(route);
+        },
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Stack(
+              children: [image_class, FloatingActionButtonGreen()],
+              alignment: const Alignment(0.9, 1),
+            ),
+            title_class,
+          ],
+        ));
   }
 }
