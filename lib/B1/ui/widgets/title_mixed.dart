@@ -9,25 +9,30 @@ class TitleClass {
 
 class TitleMixed extends StatelessWidget {
   final Color color;
+  final double text_size;
   final TitleClass? title;
-  TitleMixed({super.key, this.title, this.color = Colors.black});
+  TitleMixed({
+    super.key,
+    this.title,
+    this.color = const Color(0xff1ABC75),
+    this.text_size = 32
+  });
 
   @override
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: const TextStyle(
-          color: Color(0xff1ABC75),
-          fontSize: 32,
+        style: TextStyle(
+          color: color,
+          fontSize: text_size,
         ),
         children: [
           TextSpan(
               text: title?.title_normal,
               style: TextStyle(fontWeight: FontWeight.w400)),
-          // TextSpan(text: ''),
           TextSpan(
               text: title?.title_bold,
-              style: const TextStyle(fontWeight: FontWeight.bold)),
+              style: TextStyle(fontWeight: FontWeight.bold)),
         ],
       ),
     );

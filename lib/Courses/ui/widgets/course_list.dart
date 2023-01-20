@@ -8,14 +8,11 @@ class CourseList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        DescriptionClass("This, that, these, those",
-            "assets/img/first_course.png", "/b1/topic1"),
-        DescriptionClass("This, that, these, those",
-            "assets/img/second_course.png", "/b1/topic1"),
-        DescriptionClass("This, that, these, those",
-            "assets/img/third_course.png", "/b1/topic1"),
-        DescriptionClass("This, that, these, those",
-            "assets/img/fourth_course.png", "/b1/topic1"),
+        DescriptionClass("A1", "assets/img/first_course.png", "/b1"),
+        DescriptionClass("A2", "assets/img/second_course.png", "/b1"),
+        DescriptionClass("B1", "assets/img/third_course.png", "/b1"),
+        DescriptionClass("B1+", "assets/img/fourth_course.png", "/b1"),
+        DescriptionClass("B2", "assets/img/fourth_course.png", "/b1"),
         Container(
           height: 50,
         ),

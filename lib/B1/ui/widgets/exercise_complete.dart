@@ -57,26 +57,6 @@ class _ExerciseCompleteState extends State<ExerciseComplete> {
             SizedBox(
               height: 10,
             ),
-            CompleteSentences(
-                text_1: "Sofie: Hi. Where ",
-                text_2: "you from?",
-                number_exercise: 1,
-                list_dropdown: ["", "am", "is", "are"]),
-            CompleteSentences(
-                text_1: "Sofie: Hi. Where ",
-                text_2: "you from?",
-                number_exercise: 2,
-                list_dropdown: ["", "am", "is", "are"]),
-            CompleteSentences(
-                text_1: "Sofie: Hi. Where ",
-                text_2: "you from?",
-                number_exercise: 3,
-                list_dropdown: ["", "am", "is", "are"]),
-            CompleteSentences(
-                text_1: "Sofie: Hi. Where ",
-                text_2: "you from?",
-                number_exercise: 4,
-                list_dropdown: ["", "am", "is", "are"]),
           ]),
         ),
         // Padding(

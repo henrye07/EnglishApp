@@ -1,12 +1,14 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:sena_app/Widgets/floating_action_button.dart';
 
-class DescriptionClass extends StatelessWidget {
+class DescriptionClassB1 extends StatelessWidget {
   String title;
   String pathImage;
   String route;
 
-  DescriptionClass(this.title, this.pathImage, this.route);
+  DescriptionClassB1(this.title, this.pathImage, this.route);
 
   @override
   Widget build(BuildContext context) {

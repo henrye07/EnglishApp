@@ -12,24 +12,51 @@ class CompleteSentences extends StatelessWidget {
       required this.list_dropdown,
       this.text_1 = "",
       this.text_2 = "",
-      this.number_exercise = 1});
+      this.number_exercise = 0});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        TextGeneralClass(
-          text: text_1,
-        ),
-        DropDownExercise(
-          list_options: list_dropdown,
-          number_exercise: number_exercise,
-        ),
-        TextGeneralClass(
-          text: text_2,
-        ),
-      ],
-    );
+    return Column(children: [
+      Row(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Color(0xff1ABC75),
+            ),
+            child: Padding(
+              padding: EdgeInsets.all(5),
+              child: TextGeneralClass(
+                text: "$number_exercise",
+                color: Colors.white,
+                text_size: 20,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Flexible(
+              child: TextGeneralClass(
+            text: text_1 + " ______ " + text_2,
+          )),
+        ],
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 35),
+        child: DropDownExercise(list_options: list_dropdown),
+      ),
+    ]
+        // TextGeneralClass(
+        //   text: text_1,
+        // ),
+        // TextGeneralClass(
+        //   text: "______",
+        // ),
+        // TextGeneralClass(
+        //   text: text_2,
+        // ),
+
+        );
   }
 }

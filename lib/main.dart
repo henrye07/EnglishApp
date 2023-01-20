@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sena_app/B1/ui/screens/b1_courses.dart';
-import 'package:sena_app/B1/ui/screens/exercise_complete.dart';
+import 'package:sena_app/B1/ui/screens/present_simple_and_continuous/exercises/topic1.dart';
+import 'package:sena_app/B1/ui/screens/present_simple_and_continuous/explain_present_simple_continuos.dart';
 import 'package:sena_app/welcome_screen.dart';
 import 'package:sena_app/Courses/ui/screens/sena_courses.dart';
 
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => WelcomeScreen(),
         "/courses": (context) => SenaCourses(),
-        "/b1/topic1": (context) => ExerciseComplete(),
+        "/b1": (context) => B1Courses(),
+        "/b1/topic1/explain": (context) => ExplainPresentSimpleContinuos(),
+        "/b1/topic1/exercesises/topic1": (context) => Topic1ExerciseComplete(),
       },
     );
   }

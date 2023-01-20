@@ -3,9 +3,10 @@ import 'package:sena_app/Widgets/text_general.dart';
 
 class DropDownExercise extends StatefulWidget {
   List<String> list_options;
-  int number_exercise;
-  DropDownExercise(
-      {super.key, required this.list_options, required this.number_exercise});
+  // int number_exercise;
+  DropDownExercise({super.key, required this.list_options
+      // , required this.number_exercise
+      });
 
   @override
   State<DropDownExercise> createState() => _DropDownExerciseState();
@@ -13,12 +14,12 @@ class DropDownExercise extends StatefulWidget {
 
 class _DropDownExerciseState extends State<DropDownExercise> {
   String dropdownValue = "";
-  int _number_exercise = 1;
+  // int _number_exercise = 1;
 
   @override
   void initState() {
     dropdownValue = widget.list_options.first;
-    _number_exercise = widget.number_exercise;
+    // _number_exercise = widget.number_exercise;
   }
 
   @override
@@ -27,27 +28,15 @@ class _DropDownExerciseState extends State<DropDownExercise> {
       child: Row(
         children: [
           Container(
+            margin: EdgeInsets.only(top: 15),
+            padding: EdgeInsets.symmetric(horizontal: 30),
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Color(0xff1ABC75),
+              color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(15),
             ),
-            child: Padding(
-              padding: EdgeInsets.all(5),
-              child: TextGeneralClass(
-                text: "$_number_exercise",
-                color: Colors.white,
-                text_size: 20,
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 15,
-          ),
-          Container(
-            color: Colors.grey.shade100,
-            padding: EdgeInsets.symmetric(horizontal: 10),
             child: DropdownButton(
-              elevation: 16,
+              dropdownColor: Colors.grey.shade200,
+              // elevation: 16,
               style: TextStyle(color: Color(0xff1ABC75)),
               value: dropdownValue,
               items: widget.list_options
@@ -59,6 +48,9 @@ class _DropDownExerciseState extends State<DropDownExercise> {
                   dropdownValue = value!;
                 });
               },
+              icon: Icon(Icons.arrow_drop_down),
+              iconSize: 30,
+              underline: SizedBox(),
             ),
           ),
         ],

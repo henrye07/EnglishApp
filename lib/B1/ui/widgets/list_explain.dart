@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class ListExplain extends StatelessWidget {
   final List<String> list_normal;
   final List<String> list_bold;
+  final Color color;
+  final Color bold_color;
   final bool mixed;
 
-  ListExplain(
-      {this.list_normal = const [],
-      this.list_bold = const [],
-      this.mixed = false});
+  ListExplain({
+    super.key,
+    this.list_normal = const [],
+    this.list_bold = const [],
+    this.mixed = false,
+    this.color = Colors.black,
+    this.bold_color = Colors.black,
+  });
 
   ListView getBoldList() {
     return ListView.builder(
@@ -19,10 +24,7 @@ class ListExplain extends StatelessWidget {
       itemBuilder: (context, index) {
         return RichText(
           text: TextSpan(
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 16,
-            ),
+            style: const TextStyle(fontSize: 16, color: Colors.black),
             children: [
               TextSpan(
                   text: '\u2022 ',
@@ -31,8 +33,11 @@ class ListExplain extends StatelessWidget {
                   text: list_normal[index] + ' ',
                   style: const TextStyle(fontWeight: FontWeight.w400)),
               TextSpan(
-                  text: list_bold[index],
-                  style: const TextStyle(fontWeight: FontWeight.bold)),
+                text: list_bold[index],
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ],
           ),
         );
@@ -54,7 +59,8 @@ class ListExplain extends StatelessWidget {
               children: [
                 TextSpan(
                     text: '\u2022 ',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, color: color)),
                 TextSpan(
                     text: list_normal[index],
                     style: TextStyle(fontWeight: FontWeight.w400)),
