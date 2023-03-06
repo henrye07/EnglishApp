@@ -3,6 +3,7 @@ import 'package:sena_app/B1/ui/widgets/button_exercise.dart';
 import 'package:sena_app/B1/ui/widgets/list_explain.dart';
 import 'package:sena_app/B1/ui/widgets/title_mixed.dart';
 import 'package:sena_app/Widgets/text_general.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class B1Courses extends StatefulWidget {
   B1Courses({super.key});
@@ -33,7 +34,7 @@ class _B1CoursesState extends State<B1Courses> with TickerProviderStateMixin {
             child: TabBar(
               controller: _tabController,
               indicator: BoxDecoration(
-                color: Color(0xff6BF49F),
+                color: constants.secondary_color,
                 borderRadius: BorderRadius.circular(20),
               ),
               tabs: [
@@ -58,7 +59,7 @@ class _B1CoursesState extends State<B1Courses> with TickerProviderStateMixin {
                         title: TitleClass(
                             title_normal: 'The present simple form ',
                             title_bold: 'be'),
-                        color: const Color(0xff1ABC75),
+                        color: constants.primary_color,
                       ),
                       const SizedBox(
                         height: 15,
@@ -76,7 +77,7 @@ class _B1CoursesState extends State<B1Courses> with TickerProviderStateMixin {
                       ),
                       TextGeneralClass(
                           text: "They = People and things",
-                          color: const Color(0xff1ABC75)),
+                          color: constants.primary_color),
                       const SizedBox(
                         height: 10,
                       ),
@@ -91,7 +92,7 @@ class _B1CoursesState extends State<B1Courses> with TickerProviderStateMixin {
                         title: TitleClass(
                             title_normal: 'The present simple form ',
                             title_bold: 'be'),
-                        color: const Color(0xff1ABC75),
+                        color: constants.primary_color,
                       ),
                       const SizedBox(
                         height: 30,

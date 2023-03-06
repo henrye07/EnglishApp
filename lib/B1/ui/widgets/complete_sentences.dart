@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sena_app/B1/ui/widgets/dropdown_exercise.dart';
 import 'package:sena_app/Widgets/text_general.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class CompleteSentences extends StatelessWidget {
   final String text_1;
@@ -22,7 +23,7 @@ class CompleteSentences extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Color(0xff1ABC75),
+              color: constants.primary_color,
             ),
             child: Padding(
               padding: EdgeInsets.all(5),
@@ -44,7 +45,10 @@ class CompleteSentences extends StatelessWidget {
       ),
       Padding(
         padding: EdgeInsets.only(left: 35),
-        child: DropDownExercise(list_options: list_dropdown),
+        child: DropDownExercise(
+          list_options: list_dropdown,
+          index: number_exercise,
+        ),
       ),
     ]
         // TextGeneralClass(

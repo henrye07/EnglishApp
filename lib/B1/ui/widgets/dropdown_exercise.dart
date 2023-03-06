@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sena_app/Widgets/text_general.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class DropDownExercise extends StatefulWidget {
   List<String> list_options;
-  // int number_exercise;
-  DropDownExercise({super.key, required this.list_options
-      // , required this.number_exercise
-      });
+  int index;
+  DropDownExercise(
+      {super.key, required this.list_options, required this.index});
 
   @override
   State<DropDownExercise> createState() => _DropDownExerciseState();
@@ -14,12 +13,10 @@ class DropDownExercise extends StatefulWidget {
 
 class _DropDownExerciseState extends State<DropDownExercise> {
   String dropdownValue = "";
-  // int _number_exercise = 1;
 
   @override
   void initState() {
     dropdownValue = widget.list_options.first;
-    // _number_exercise = widget.number_exercise;
   }
 
   @override
@@ -45,10 +42,12 @@ class _DropDownExerciseState extends State<DropDownExercise> {
                   setState(() {
                     dropdownValue = value!;
                   });
+                  // BlocProvider.of<Topic1Bloc>(context, listen: false)
+                  //     .add(OnChangeAnswers(value!, widget.index));
                 },
                 dropdownColor: Colors.grey.shade200,
                 // elevation: 16,
-                style: TextStyle(color: Color(0xff1ABC75)),
+                style: TextStyle(color: constants.primary_color),
                 icon: Icon(Icons.arrow_drop_down),
                 iconSize: 30,
                 underline: Container(
@@ -57,7 +56,7 @@ class _DropDownExerciseState extends State<DropDownExercise> {
                       side: BorderSide(
                           width: 1.0,
                           style: BorderStyle.solid,
-                          color: Color(0xff1ABC75)),
+                          color: constants.primary_color),
                       borderRadius: BorderRadius.all(Radius.circular(5.0)),
                     ),
                   ),

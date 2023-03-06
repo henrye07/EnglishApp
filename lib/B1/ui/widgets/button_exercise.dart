@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sena_app/Widgets/text_general.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class ButtonExercise extends StatelessWidget {
   String title;
@@ -49,7 +50,7 @@ class ButtonExercise extends StatelessWidget {
               const Icon(
                 Icons.arrow_forward_rounded,
                 size: 20,
-                color: Color(0xff1ABC75),
+                color: constants.primary_color,
               )
             ],
           ),

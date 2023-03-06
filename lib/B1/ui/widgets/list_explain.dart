@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class ListExplain extends StatelessWidget {
   final List<String> list_normal;
@@ -12,8 +13,8 @@ class ListExplain extends StatelessWidget {
     this.list_normal = const [],
     this.list_bold = const [],
     this.mixed = false,
-    this.color = Colors.black,
-    this.bold_color = Colors.black,
+    this.color = constants.black_color,
+    this.bold_color = constants.black_color,
   });
 
   ListView getBoldList() {
@@ -24,7 +25,7 @@ class ListExplain extends StatelessWidget {
       itemBuilder: (context, index) {
         return RichText(
           text: TextSpan(
-            style: const TextStyle(fontSize: 16, color: Colors.black),
+            style: const TextStyle(fontSize: 16, color: constants.black_color),
             children: [
               TextSpan(
                   text: '\u2022 ',
@@ -53,7 +54,7 @@ class ListExplain extends StatelessWidget {
           return RichText(
             text: TextSpan(
               style: TextStyle(
-                color: Colors.black,
+                color: constants.black_color,
                 fontSize: 16,
               ),
               children: [

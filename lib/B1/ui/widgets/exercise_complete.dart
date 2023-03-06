@@ -3,6 +3,7 @@ import 'package:sena_app/B1/ui/widgets/complete_sentences.dart';
 import 'package:sena_app/B1/ui/widgets/title_mixed.dart';
 import 'package:sena_app/Widgets/subtitle2_text.dart';
 import 'package:sena_app/Widgets/text_general.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 List<String> list = <String>[" ", "am", "is", "are"];
 
@@ -30,7 +31,7 @@ class _ExerciseCompleteState extends State<ExerciseComplete> {
             TitleMixed(
               title: TitleClass(
                   title_normal: 'The present simple form ', title_bold: 'be'),
-              color: const Color(0xff1ABC75),
+              color: constants.primary_color,
             ),
             SizedBox(
               height: 20,

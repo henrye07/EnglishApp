@@ -122,7 +122,7 @@ class _Topic1ExerciseCompleteState extends State<Topic1ExerciseComplete> {
                         text_1:
                             "Where do you think the people is looking for find",
                         text_2: "answer?",
-                        number_exercise: 2,
+                        number_exercise: 3,
                         list_dropdown: ["", "are", "am", "is"],
                       ),
                       SizedBox(
@@ -132,7 +132,7 @@ class _Topic1ExerciseCompleteState extends State<Topic1ExerciseComplete> {
                         text_1:
                             "Where do you think the people is looking for find",
                         text_2: "answer?",
-                        number_exercise: 2,
+                        number_exercise: 4,
                         list_dropdown: ["", "are", "am", "is"],
                       ),
                       SizedBox(
@@ -142,7 +142,7 @@ class _Topic1ExerciseCompleteState extends State<Topic1ExerciseComplete> {
                         text_1:
                             "Where do you think the people is looking for find",
                         text_2: "answer?",
-                        number_exercise: 2,
+                        number_exercise: 5,
                         list_dropdown: ["", "are", "am", "is"],
                       ),
                       SizedBox(
@@ -152,7 +152,7 @@ class _Topic1ExerciseCompleteState extends State<Topic1ExerciseComplete> {
                         text_1:
                             "Where do you think the people is looking for find",
                         text_2: "answer?",
-                        number_exercise: 2,
+                        number_exercise: 6,
                         list_dropdown: ["", "are", "am", "is"],
                       ),
                       SizedBox(
@@ -162,7 +162,7 @@ class _Topic1ExerciseCompleteState extends State<Topic1ExerciseComplete> {
                         text_1:
                             "Where do you think the people is looking for find",
                         text_2: "answer?",
-                        number_exercise: 2,
+                        number_exercise: 7,
                         list_dropdown: ["", "are", "am", "is"],
                       ),
                       SizedBox(

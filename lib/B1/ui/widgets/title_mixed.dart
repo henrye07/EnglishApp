@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sena_app/assets/constants.dart' as constants;
 
 class TitleClass {
   String title_normal;
@@ -11,12 +12,11 @@ class TitleMixed extends StatelessWidget {
   final Color color;
   final double text_size;
   final TitleClass? title;
-  TitleMixed({
-    super.key,
-    this.title,
-    this.color = const Color(0xff1ABC75),
-    this.text_size = 32
-  });
+  TitleMixed(
+      {super.key,
+      this.title,
+      this.color = constants.primary_color,
+      this.text_size = 32});
 
   @override
   Widget build(BuildContext context) {
